@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Parenthese</Name>
+  <Repository>ghcr.io/iliesallali/parenthese-aio:latest</Repository>
+  <Registry>https://github.com/IliesAllali/parenthese/pkgs/container/parenthese-aio</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/IliesAllali/parenthese/issues</Support>
+  <Project>https://github.com/IliesAllali/parenthese</Project>
+  <Overview>A family tree you host yourself. Each person gets photos, videos, voice recordings and stories. Relatives open the tree from a link without an account, and can suggest additions that the owner approves. This container runs everything (PostgreSQL, API, web app) and needs no setup. It creates its database and keys in the appdata folder on first start.</Overview>
+  <Category>Productivity: MediaApp:Photos</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <Icon>https://raw.githubusercontent.com/IliesAllali/parenthese/main/landing/public/apple-touch-icon.png</Icon>
+  <License>PolyForm Noncommercial 1.0.0, free for personal and family use. Full text in the project repository.</License>
+  <TemplateURL>https://raw.githubusercontent.com/IliesAllali/unraid-parenthese/main/templates/parenthese.xml</TemplateURL>
+  <Config Name="Web port" Target="80" Default="8080" Mode="tcp" Description="Port where Parenthese opens in the browser" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/parenthese" Mode="rw" Description="Database, photos, videos and generated keys. Back up this folder." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/parenthese</Config>
+</Container>

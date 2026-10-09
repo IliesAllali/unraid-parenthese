@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommunityApplications>
+  <Profile>Unraid template for Parenthese, a family tree you host yourself, with photos, videos and voice on each person, shared with relatives through a link. Source code and support are on the project repository.</Profile>
+  <Icon>https://raw.githubusercontent.com/IliesAllali/parenthese/main/landing/public/apple-touch-icon.png</Icon>
+  <WebPage>https://github.com/IliesAllali/parenthese</WebPage>
+</CommunityApplications>
