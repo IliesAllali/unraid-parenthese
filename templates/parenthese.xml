@@ -17,4 +17,5 @@
   <TemplateURL>https://raw.githubusercontent.com/IliesAllali/unraid-parenthese/main/templates/parenthese.xml</TemplateURL>
   <Config Name="Web port" Target="80" Default="8080" Mode="tcp" Description="Port where Parenthese opens in the browser" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Data" Target="/data" Default="/mnt/user/appdata/parenthese" Mode="rw" Description="Database, photos, videos and generated keys. Back up this folder." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/parenthese</Config>
+  <Config Name="Allow registration" Target="ALLOW_REGISTRATION" Default="true|false" Mode="" Description="false: nobody can create an account any more. Existing accounts keep signing in, relatives still open shared trees with the link and password. An instance with no account still accepts the first one, so create yours right after the first start." Type="Variable" Display="always" Required="false" Mask="false">true</Config>
 </Container>
